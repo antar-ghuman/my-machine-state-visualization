@@ -9,4 +9,11 @@ export const calculateMovingAverage = (data, valueKey, periods) => {
       return { ...item, [valueKey]: sum / Math.min(index + 1, periods) };
     });
   };
+
+
+  // Format timestamp into a readable time format
+  export const formatTimestamp = (timestamp) => {
+    const date = new Date(timestamp);
+    return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  };
   
