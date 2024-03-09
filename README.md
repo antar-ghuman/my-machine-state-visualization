@@ -32,11 +32,11 @@ npm install
 or
 ```bash
 yarn install
+```
 
 ```bash
 Here are the command lines to install the other dependencies:
 
-```bash
 npm install axios bootstrap chart.js react react-chartjs-2 react-dom react-scripts
 ```
 
