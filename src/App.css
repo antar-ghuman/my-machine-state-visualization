@@ -2,6 +2,99 @@
   text-align: center;
 }
 
+/* App.css */
+
+/* App.css */
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 20px; /* Add gaps for some space between the charts */
+}
+
+.operating-load-chart {
+  width: 100%;
+}
+
+.operating-load-chart .recharts-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* App.css */
+
+/* Style for the chart container */
+.operating-load-chart {
+  width: 100%;
+}
+
+/* Style for the chart wrapper */
+.operating-load-chart .recharts-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for the chart title */
+.operating-load-chart .recharts-wrapper .recharts-cartesian-axis-title {
+  font-size: 16px; /* Adjust the font size as needed */
+  fill: #333; /* Adjust the color as needed */
+}
+
+/* Style for the x-axis labels */
+.operating-load-chart .recharts-wrapper .recharts-cartesian-axis-tick-value {
+  font-size: 12px; /* Adjust the font size as needed */
+  fill: #333; /* Adjust the color as needed */
+}
+
+/* Style for the y-axis label */
+.operating-load-chart .recharts-wrapper .recharts-yaxis-label {
+  font-size: 14px; /* Adjust the font size as needed */
+  fill: #333; /* Adjust the color as needed */
+}
+
+/* Style for the legend */
+.operating-load-chart .recharts-wrapper .recharts-legend {
+  font-size: 14px; /* Adjust the font size as needed */
+  fill: #333; /* Adjust the color as needed */
+}
+
+.chart-container {
+  flex: 1 1 40%; /* This will allow each chart to grow and take up to 40% of the container's width */
+  margin-bottom: 20px; /* Space between rows of charts */
+}
+.chart-title {
+  color: black;
+}
+
+.chart-label {
+  color: black;
+}
+
+/* App.css */
+.insight {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.insight h3 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    flex: 1 1 100%; /* Stack charts vertically on smaller screens */
+  }
+}
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
