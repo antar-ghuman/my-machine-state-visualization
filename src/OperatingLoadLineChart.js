@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import { getHourlyAverages, getMovingAverage, formatTimestamp } from './utils';
+import {formatTimestamp } from './utils';
 
 // Utility function to calculate moving average
 const calculateMovingAverage = (data, period) => {
