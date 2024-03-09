@@ -15,27 +15,38 @@
 }
 
 .operating-load-chart {
-  width: 100%;
-}
-
-.operating-load-chart .recharts-wrapper {
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
+
+@media (max-width: 768px) {
+  .operating-load-chart {
+    width: 100%;
+    height: 50vh; /* Take up more height on smaller screens if necessary */
+    padding: 10px; /* Maybe less padding on smaller screens */
+  }
+}
+
+/* .operating-load-chart .recharts-wrapper {
+  width: 90%;
+  height: 90%;
+} */
 
 
 
 /* App.css */
 
 /* Style for the chart container */
-.operating-load-chart {
-  width: 100%;
-}
 
 /* Style for the chart wrapper */
-.operating-load-chart .recharts-container {
-  width: 100%;
-  height: 100%;
+.operating-load-chart .recharts-container  {
+  width: 90%;
+  height: 90%;
+}
+
+.tool-changeover-visualizer {
+  width: 70%;
+  height: 40%;
 }
 
 /* Style for the chart title */
@@ -62,8 +73,11 @@
   fill: #333; /* Adjust the color as needed */
 }
 
+
 .chart-container {
-  flex: 1 1 40%; /* This will allow each chart to grow and take up to 40% of the container's width */
+  flex: 1 1 calc(50% - 20px); /* Adjust width to take half of container minus gap */
+  box-sizing: border-box; /* Include padding and border in element's dimensions */
+  padding: 10px; /* Internal spacing */
   margin-bottom: 20px; /* Space between rows of charts */
 }
 .chart-title {
@@ -105,6 +119,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;

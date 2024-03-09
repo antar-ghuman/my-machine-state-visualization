@@ -5,6 +5,7 @@ import MachineStateBarChart from './MachineStateBarChart';
 import OperatingLoadLineChart from './OperatingLoadLineChart';
 import OperationalEfficiency from './OperationalEfficiency';
 import PowerUsageBarChart from './PowerUsageBarChart';
+import ToolChangeoverTimeVisualizer from './ToolChangeoverTimeVisualizer';
 // Assuming the JSON data is static and bundled with the web app; adjust the path as necessary.
 import data from './Processed_machine_states.json'; // Adjusted the path for a typical React project structure.
 
@@ -33,12 +34,16 @@ return (
       <div className="operating-load-chart">
         <OperatingLoadLineChart machineStates={machineStates} />
       </div>  
-      <div className="chart-container">
-        <OperationalEfficiency machineStates={machineStates} />
+      <div className="tool-changeover-visualizer">
+        <ToolChangeoverTimeVisualizer machineStates={machineStates} />
       </div>
       <div className="chart-container">
         <MachineStateBarChart machineStates={machineStates} />
       </div>
+      <div className="chart-container">
+        <OperationalEfficiency machineStates={machineStates} />
+      </div>
+
       <div className="chart-container">
         <PowerUsageBarChart machineStates={machineStates} />
       </div>
