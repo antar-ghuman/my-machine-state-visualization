@@ -3,11 +3,7 @@ import React from 'react';
 import Chart from 'chart.js/auto'; // Ensure Chart.js is correctly imported.
 import MachineStateBarChart from './MachineStateBarChart';
 import OperatingLoadLineChart from './OperatingLoadLineChart';
-import InsightsComponent from './InsightsComponent';
-import EquipmentUtilization from './EquipmentUtilization';
 import OperationalEfficiency from './OperationalEfficiency';
-import ToolChangeoverTimes from './ToolChangeoverTimes';
-import DailyHourlyTrends from './DailyHourlyTrends';
 import PowerUsageBarChart from './PowerUsageBarChart';
 // Assuming the JSON data is static and bundled with the web app; adjust the path as necessary.
 import data from './Processed_machine_states.json'; // Adjusted the path for a typical React project structure.
@@ -32,18 +28,6 @@ const MachineStateVisualizer = () => {
     return acc + duration;
   }, 0);
 
-//   return (
-//     <div>
-//       <h2>Machine States</h2>
-//       <MachineStateBarChart machineStates={machineStates} />
-//       <OperatingLoadLineChart machineStates={machineStates} />
-//       <InsightsComponent
-//         averageUtilization={averageUtilization.toFixed(2)} // Ensures the number is nicely formatted
-//         idleTime={idleTime.toFixed(2)} // Similarly, formats the idle time
-//       />
-//     </div>
-//   );
-// };
 return (
     <div className="dashboard-container">
       <div className="operating-load-chart">
@@ -58,13 +42,6 @@ return (
       <div className="chart-container">
         <PowerUsageBarChart machineStates={machineStates} />
       </div>
-      {/* <div className="chart-container">
-        <ToolChangeoverTimes machineStates={machineStates} />
-      </div> */}
-      {/* <div className="chart-container">
-        <InsightsComponent machineStates={machineStates} />
-      </div> */}
-      {/* ...and any other components you want to add */}
     </div>
   );
 };

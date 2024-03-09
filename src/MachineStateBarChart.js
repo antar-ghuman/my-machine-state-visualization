@@ -61,6 +61,7 @@ const MachineStateBarChart = () => {
           bottom: 10
         }
       }
+      
     }
   };
 
