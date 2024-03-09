@@ -33,6 +33,7 @@ or
 ```bash
 yarn install
 
+```bash
 Here are the command lines to install the other dependencies:
 
 ```bash
