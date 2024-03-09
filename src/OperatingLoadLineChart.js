@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import {formatTimestamp } from './utils';
 
 // Utility function to calculate moving average
 const calculateMovingAverage = (data, period) => {
@@ -13,6 +12,11 @@ const calculateMovingAverage = (data, period) => {
     const sum = subset.reduce((acc, val) => acc + val.Psum, 0);
     return { ...point, averagePsum: sum / subset.length };
   });
+};
+
+const formatTimestamp = (timestamp) => {
+  const date = new Date(timestamp);
+  return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 };
 
 const OperatingLoadLineChart = ({ machineStates }) => {
