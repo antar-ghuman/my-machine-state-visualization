@@ -8,7 +8,6 @@ This project is a user interface (UI) developed to visualize machine states for 
 - Visualize machine states over time using line charts.
 - Select different time periods (1 hour, 3 hours, 6 hours, 12 hours, or 24 hours) to view average power draw.
 - Analyze operational efficiency with pie charts showing the distribution of machine states.
-- Calculate and display average changeover time for tool changes.
 
 ## Installation and Setup
 
