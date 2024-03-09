@@ -17,3 +17,4 @@ export const calculateMovingAverage = (data, valueKey, periods) => {
     return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   };
   
+
