@@ -3,7 +3,7 @@
 
 This project is a user interface (UI) developed to visualize machine states for a given period of time. It utilizes React and the Recharts library to create interactive charts, allowing users to explore machine states and power usage trends.
 
-<img width="1453" alt="Screenshot 2024-03-09 at 1 42 56 PM" src="https://github.com/antar-ghuman/my-machine-state-visualization/assets/15168272/aadc7dd8-1c4a-411e-9469-30e7cc6a3cfc">
+<img width="1453" alt="UI" src="https://github.com/antar-ghuman/my-machine-state-visualization/blob/master/UI.png">
 
 
 
