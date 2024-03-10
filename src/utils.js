@@ -6,7 +6,7 @@ export const calculateMovingAverage = (data, valueKey, periods) => {
       if (index >= periods) {
         sum -= data[index - periods][valueKey];
       }
-      return { ...item, [valueKey]: sum / Math.min(index + 1, periods) };
+      return { item, [valueKey]: sum / Math.min(index + 1, periods) };
     });
   };
   
