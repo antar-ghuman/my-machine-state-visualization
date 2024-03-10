@@ -6,11 +6,10 @@ import OperatingLoadLineChart from './OperatingLoadLineChart';
 import OperationalEfficiency from './OperationalEfficiency';
 import PowerUsageBarChart from './PowerUsageBarChart';
 import ToolChangeoverTimeVisualizer from './ToolChangeoverTimeVisualizer';
-// Assuming the JSON data is static and bundled with the web app; adjust the path as necessary.
-import data from './Processed_machine_states.json'; // Adjusted the path for a typical React project structure.
+import data from './Processed_machine_states.json'; 
 
 const MachineStateVisualizer = () => {
-  // Simulated data fetched from JSON file
+  
   const machineStates = data;
 
   // Calculate average utilization
